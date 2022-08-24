@@ -15,6 +15,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        //Go to database and get the data
         return View();
     }
 
