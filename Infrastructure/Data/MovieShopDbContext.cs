@@ -19,7 +19,7 @@ public class MovieShopDbContext : DbContext
     // Movies Table access
     public DbSet<Movie> Movies { get; set; }
     
-    // public DbSet<Genre> Genres { get; set; }
+    public DbSet<Genre> Genres { get; set; }
     //
     // public DbSet<MovieGenre> MovieGenres { get; set; }
     //
