@@ -1,5 +1,5 @@
 using System.ComponentModel.DataAnnotations;
-
+using System.ComponentModel.DataAnnotations;
 namespace ApplicationCore.Entities;
 
 public class Movie
@@ -8,19 +8,29 @@ public class Movie
     [MaxLength(256)]
     public string Title { get; set; } = null!;
     public string Overview { get; set; } = null!;
+    [MaxLength(512)]
     public string Tagline { get; set; } = null!;
-    public decimal? Budger { get; set; }
+    public decimal? Budget { get; set; }
     public decimal? Revenue { get; set; }
+    [MaxLength(2084)]
     public string ImdbUrl { get; set; } = null!;
+    [MaxLength(2084)]
     public string TmdbUrl { get; set; } = null!;
+    [MaxLength(2084)]
     public string PosterUrl { get; set; } = null!;
+    [MaxLength(2084)]
     public string BackdropUrl { get; set; } = null!;
     [MaxLength(64)]
     public string OriginalLanguage { get; set; } = null!;
     public DateTime? ReleaseDate { get; set; }
 
-    public TYPE Type { get; set; }
-    public decimal? CreatedBy { get; set; }
+    public int? RunTime { get; set; }
+    public decimal? Price { get; set; }
+    public DateTime CreatedDate { get; set; }
+    public DateTime UpdatedDate { get; set; }
+    public string? UpdatedBy { get; set; }
+    public string? CreatedBy { get; set; }
+    
     public decimal? Rating { get; set; }
     
 

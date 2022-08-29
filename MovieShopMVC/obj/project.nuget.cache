@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "4y3O1fb1DE6yzziqQWuxdGJVFdBPZ9CATKBvUCZJTLg0Y6u7PWxnqnsnftflf8GvVWEQhZb9PruFlrrjINeHPA==",
+  "dgSpecHash": "zfJMKhCNvqpFP6BIOQR1oXSDbNvXFWcJAI0BWWk1DSpd6mdULOdWsLCKdIQk9r9pjXkU7FdYSn7Uv5lAf3Zi2A==",
   "success": true,
   "projectFilePath": "/Users/anhdo.us/Desktop/July2022/MovieShop/MovieShopMVC/MovieShopMVC.csproj",
   "expectedPackageFiles": [
     "/Users/anhdo.us/.nuget/packages/azure.core/1.20.0/azure.core.1.20.0.nupkg.sha512",
     "/Users/anhdo.us/.nuget/packages/azure.identity/1.5.0/azure.identity.1.5.0.nupkg.sha512",
+    "/Users/anhdo.us/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/anhdo.us/.nuget/packages/microsoft.bcl.asyncinterfaces/1.0.0/microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
     "/Users/anhdo.us/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",
     "/Users/anhdo.us/.nuget/packages/microsoft.data.sqlclient/5.0.0-preview2.22096.2/microsoft.data.sqlclient.5.0.0-preview2.22096.2.nupkg.sha512",
@@ -13,10 +14,9 @@
     "/Users/anhdo.us/.nuget/packages/microsoft.entityframeworkcore/7.0.0-preview.7.22376.2/microsoft.entityframeworkcore.7.0.0-preview.7.22376.2.nupkg.sha512",
     "/Users/anhdo.us/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.0-preview.7.22376.2/microsoft.entityframeworkcore.abstractions.7.0.0-preview.7.22376.2.nupkg.sha512",
     "/Users/anhdo.us/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.0-preview.7.22376.2/microsoft.entityframeworkcore.analyzers.7.0.0-preview.7.22376.2.nupkg.sha512",
+    "/Users/anhdo.us/.nuget/packages/microsoft.entityframeworkcore.design/7.0.0-preview.7.22376.2/microsoft.entityframeworkcore.design.7.0.0-preview.7.22376.2.nupkg.sha512",
     "/Users/anhdo.us/.nuget/packages/microsoft.entityframeworkcore.relational/7.0.0-preview.7.22376.2/microsoft.entityframeworkcore.relational.7.0.0-preview.7.22376.2.nupkg.sha512",
-    "/Users/anhdo.us/.nuget/packages/microsoft.entityframeworkcore.relational.design/2.0.0-preview1-final/microsoft.entityframeworkcore.relational.design.2.0.0-preview1-final.nupkg.sha512",
     "/Users/anhdo.us/.nuget/packages/microsoft.entityframeworkcore.sqlserver/7.0.0-preview.7.22376.2/microsoft.entityframeworkcore.sqlserver.7.0.0-preview.7.22376.2.nupkg.sha512",
-    "/Users/anhdo.us/.nuget/packages/microsoft.entityframeworkcore.sqlserver.design/2.0.0-preview1-final/microsoft.entityframeworkcore.sqlserver.design.2.0.0-preview1-final.nupkg.sha512",
     "/Users/anhdo.us/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0-preview.7.22375.6/microsoft.extensions.caching.abstractions.7.0.0-preview.7.22375.6.nupkg.sha512",
     "/Users/anhdo.us/.nuget/packages/microsoft.extensions.caching.memory/7.0.0-preview.7.22375.6/microsoft.extensions.caching.memory.7.0.0-preview.7.22375.6.nupkg.sha512",
     "/Users/anhdo.us/.nuget/packages/microsoft.extensions.configuration.abstractions/7.0.0-preview.7.22375.6/microsoft.extensions.configuration.abstractions.7.0.0-preview.7.22375.6.nupkg.sha512",
@@ -35,11 +35,11 @@
     "/Users/anhdo.us/.nuget/packages/microsoft.identitymodel.tokens/6.8.0/microsoft.identitymodel.tokens.6.8.0.nupkg.sha512",
     "/Users/anhdo.us/.nuget/packages/microsoft.netcore.platforms/5.0.0/microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "/Users/anhdo.us/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",
-    "/Users/anhdo.us/.nuget/packages/microsoft.packaging.tools/1.0.0-preview1-25301-01/microsoft.packaging.tools.1.0.0-preview1-25301-01.nupkg.sha512",
     "/Users/anhdo.us/.nuget/packages/microsoft.win32.registry/5.0.0/microsoft.win32.registry.5.0.0.nupkg.sha512",
     "/Users/anhdo.us/.nuget/packages/microsoft.win32.systemevents/5.0.0/microsoft.win32.systemevents.5.0.0.nupkg.sha512",
-    "/Users/anhdo.us/.nuget/packages/netstandard.library/2.0.0-preview1-25301-01/netstandard.library.2.0.0-preview1-25301-01.nupkg.sha512",
+    "/Users/anhdo.us/.nuget/packages/mono.texttemplating/2.2.1/mono.texttemplating.2.2.1.nupkg.sha512",
     "/Users/anhdo.us/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
+    "/Users/anhdo.us/.nuget/packages/system.codedom/4.4.0/system.codedom.4.4.0.nupkg.sha512",
     "/Users/anhdo.us/.nuget/packages/system.configuration.configurationmanager/5.0.0/system.configuration.configurationmanager.5.0.0.nupkg.sha512",
     "/Users/anhdo.us/.nuget/packages/system.diagnostics.diagnosticsource/5.0.0/system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",
     "/Users/anhdo.us/.nuget/packages/system.drawing.common/5.0.0/system.drawing.common.5.0.0.nupkg.sha512",
@@ -69,16 +69,5 @@
     "/Users/anhdo.us/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "/Users/anhdo.us/.nuget/packages/system.windows.extensions/5.0.0/system.windows.extensions.5.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Microsoft.Extensions.Primitives 2.0.0-preview1-final depends on System.Runtime.CompilerServices.Unsafe (>= 4.4.0-preview1-25219-04) but System.Runtime.CompilerServices.Unsafe 4.4.0-preview1-25219-04 was not found. An approximate best match of System.Runtime.CompilerServices.Unsafe 4.4.0-preview1-25305-02 was resolved.",
-      "libraryId": "System.Runtime.CompilerServices.Unsafe",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  "logs": []
 }
