@@ -19,4 +19,11 @@ public class GenreRepository : IGenreRepository
         var genres = await _movieShopDbContext.Genres.ToListAsync();
         return genres;
     }
+    public async Task<Genre> MoviesByGenre(int id, int pageSize = 30, int pageNumber = 1)
+    {
+        var genreDetails = await _movieShopDbContext.Genres
+            .Include(m => m.MoviesOfGenre).ThenInclude(m => m.Movie)
+            .FirstOrDefaultAsync(m => m.Id == id);
+        return genreDetails;
+    }
 }

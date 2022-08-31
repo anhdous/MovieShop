@@ -23,6 +23,12 @@ public class MovieRepository : IMovieRepository
             .FirstOrDefaultAsync(m => m.Id == id);
         return movieDetails;
     }
+
+    public Task<Movie> MoviesByGenre(int id, int pageSize = 30, int pageNumber = 1)
+    {
+        throw new NotImplementedException();
+    }
+
     public async Task<List<Movie>> GetTop30GrossingMovies()
     {
         //call the database with EF Core and get the data
