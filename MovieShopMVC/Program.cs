@@ -1,6 +1,5 @@
 using ApplicationCore.Contracts.Repositories;
 using ApplicationCore.Contracts.Services;
-using ApplicationCore.Entities;
 using Infrastructure.Data;
 using Infrastructure.Repositories;
 using Infrastructure.Services;
@@ -13,9 +12,14 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<IMovieService, MovieService>();
 builder.Services.AddScoped<IMovieRepository, MovieRepository>();
+builder.Services.AddScoped<IGenreRepository, GenreRepository>();
+builder.Services.AddScoped<IGenreService, GenreService>();
+builder.Services.AddScoped<ICastRepository, CastRepository>();
+builder.Services.AddScoped<ICastService, CastService>();
 
 // inject the connection string from appsettings.json into MovieShopDbContext class
-builder.Services.AddDbContext<MovieShopDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("MovieShopDbConnection")));
+builder.Services.AddDbContext<MovieShopDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("MovieShopDbConnection")));
 
 
 var app = builder.Build();
@@ -36,7 +40,7 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    "default",
+    "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

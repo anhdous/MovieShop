@@ -1,1 +1,108 @@
-<h2>Display Movie Details by id Todo</h2>
+@using Microsoft.EntityFrameworkCore.Infrastructure
+@using ApplicationCore.Entities
+@model ApplicationCore.Models.MovieDetailsModel
+@{
+    ViewData["Title"] = @Model.Title;
+}
+<div class="rounded">
+    <div class="container-fluid">
+        <div class="row" id ="movie-section">
+            <div class="col-4 text-center">
+                <img src="@Model.PosterUrl" style="height:320px;"/>
+            </div>
+            <div class="col-5" style="color: white">
+                <h2>
+                    @Model.Title
+                </h2>
+                <p style="font-size:0.75em;">
+                    @Model.Tagline
+                </p>
+                <div class="row">
+                    <div class="col-auto">
+                        <p>@Model.RunTime | @Model.ReleaseDate.Value.Year</p>
+                    </div>
+                    <div class="col-auto">
+                        @foreach (var genre in @Model.Genres)
+                        {
+                            <span class="badge rounded-pill bg-secondary">@genre.Name</span>  
+                        }
+                    </div>
+                </div>
+                <span class="badge bg-success">8.9</span>
+                <p style="margin-top: 25px;font-size:0.8em;">@Model.Overview</p>
+            </div>
+            
+            <div class="col-3 text-center">
+                <div class="row">
+                    <div class="col">
+                        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#reviewModal" style="width:85%; margin: 50px 0px 20px 0px;">REVIEW</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#buyModal" style="width:85%; margin: 0px 0px 20px 0px;">BUY $@Model.Price</button>
+                    </div>
+                </div>                
+                <div class="modal fade" id="buyModal" tabindex="-1" aria-labelledby="buyModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Confirmation</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                $@Model.Price
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Purchase</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-4">
+                <h5>MOVIE FACTS</h5>
+                <hr></hr>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Release Date <span class="badge rounded-pill bg-dark">@Model.ReleaseDate</span></li>
+                    <li class="list-group-item">Run Time <span class="badge rounded-pill bg-dark">@Model.RunTime m</span></li>
+                    <li class="list-group-item">Box Office <span class="badge rounded-pill bg-dark">$@Model.Revenue</span></li>
+                    <li class="list-group-item">Budget <span class="badge rounded-pill bg-dark">$@Model.Budget</span></li>
+                </ul>
+                <br/>
+                <h5>TRAILERS</h5>
+                <hr></hr>
+                <ul class="list-group list-group-flush">
+                    @foreach (var trailer in @Model.Trailers)
+                    {
+                        <li class="list-group-item">@trailer.Name</li>
+                    }
+                </ul>
+            </div>
+            
+            <div class="col-auto">
+                <h5>CAST</h5>
+                <hr></hr>
+                <ul class="list-group list-group-flush">
+                    @foreach (var cast in @Model.Casts)
+                    {
+                        <li class="list-group-item">
+                            <ul class="list-group list-group-horizontal">
+                                <li class="list-group-item border-0"><a asp-controller="Cast" asp-action="Details" asp-route-id="@cast.Id">
+                                            <img class="rounded-circle" style="height:35px" src="@cast.ProfilePath"/>
+                                        </a></li>
+                                <li class="list-group-item border-0" style="width:200px;">@cast.Name </li>
+                                <li class="list-group-item border-0">@cast.Character</li>
+                            </ul>
+                    </li>
+                    }
+                    </ul>
+            </div>
+        </div>
+    </div>
+</div>

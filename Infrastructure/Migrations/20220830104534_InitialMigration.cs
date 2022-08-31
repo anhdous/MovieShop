@@ -5,10 +5,8 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Infrastructure.Migrations
 {
-    /// <inheritdoc />
-    public partial class InitialMigration : Migrdotnet ef migrations add InitialMigration -p ../Infrastructure/Infrastructure.csprojation
+    public partial class InitialMigration : Migration
     {
-        /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
@@ -59,8 +57,8 @@ namespace Infrastructure.Migrations
                     ReleaseDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     RunTime = table.Column<int>(type: "int", nullable: true),
                     Price = table.Column<decimal>(type: "decimal(5,2)", nullable: true, defaultValue: 9.9m),
-                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: false, defaultValueSql: "getdate()"),
-                    UpdatedDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    CreatedDate = table.Column<DateTime>(type: "datetime2", nullable: true, defaultValueSql: "getdate()"),
+                    UpdatedDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     UpdatedBy = table.Column<string>(type: "nvarchar(512)", maxLength: 512, nullable: true),
                     CreatedBy = table.Column<string>(type: "nvarchar(512)", maxLength: 512, nullable: true)
                 },
@@ -88,14 +86,14 @@ namespace Infrastructure.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    DateOfBirth = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DateOfBirth = table.Column<DateTime>(type: "datetime2", nullable: true),
                     Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: false),
                     FirstName = table.Column<string>(type: "nvarchar(128)", maxLength: 128, nullable: false),
                     HashedPassword = table.Column<string>(type: "nvarchar(1024)", maxLength: 1024, nullable: false),
-                    IsLocked = table.Column<int>(type: "int", nullable: false),
+                    IsLocked = table.Column<int>(type: "int", nullable: true),
                     LastName = table.Column<string>(type: "nvarchar(128)", maxLength: 128, nullable: false),
-                    PhoneNumber = table.Column<string>(type: "nvarchar(16)", maxLength: 16, nullable: false),
-                    ProfilePictureUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PhoneNumber = table.Column<string>(type: "nvarchar(16)", maxLength: 16, nullable: true),
+                    ProfilePictureUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Salt = table.Column<string>(type: "nvarchar(1024)", maxLength: 1024, nullable: false)
                 },
                 constraints: table =>
@@ -331,7 +329,6 @@ namespace Infrastructure.Migrations
                 column: "UserId");
         }
 
-        /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(

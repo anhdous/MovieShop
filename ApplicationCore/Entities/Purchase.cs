@@ -10,5 +10,4 @@ public class Purchase
     public DateTime PurchaseDateTime { get; set; }
     public string PurchaseNumber { get; set; }
     public decimal TotalPrice { get; set; }
-
 }

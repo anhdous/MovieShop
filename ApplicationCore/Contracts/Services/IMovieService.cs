@@ -8,5 +8,6 @@ public interface IMovieService
 
     // called by home/index
     // services will always return models/viewmodels/DTO (data transfer objects)
-    List<MovieCardModel> GetTop30GrossingMovies();
+    Task<List<MovieCardModel>> GetTop30GrossingMovies();
+    Task<MovieDetailsModel> GetMovieDetails(int movieId);
 }

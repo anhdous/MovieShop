@@ -15,6 +15,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/anhdo.us/Desktop/July2022/MovieShop/MovieShopMVC
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/anhdo.us/Desktop/July2022/MovieShop/MovieShopMVC/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/anhdo.us/Desktop/July2022/MovieShop/MovieShopMVC/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9SZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/anhdo.us/Desktop/July2022/MovieShop/MovieShopMVC/Views/Cast/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FzdC9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/anhdo.us/Desktop/July2022/MovieShop/MovieShopMVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
