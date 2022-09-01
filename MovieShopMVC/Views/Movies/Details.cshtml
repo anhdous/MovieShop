@@ -40,7 +40,7 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <button type="button" class="btn" id="buy-button" data-bs-toggle="modal" data-bs-target="#buyModal">BUY $@Model.Price</button>
+                        <button type="button" class="btn" id="buy-button" data-bs-toggle="modal" data-bs-target="#buyModal">BUY @($"{@Model.Price:C2}")</button>
                     </div>
                 </div>                
                 <div class="modal fade" id="buyModal" tabindex="-1" aria-labelledby="buyModalLabel" aria-hidden="true">
@@ -69,10 +69,10 @@
                 <h5>MOVIE FACTS</h5>
                 <hr></hr>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Release Date <span class="badge rounded-pill bg-dark">@Model.ReleaseDate</span></li>
+                    <li class="list-group-item">Release Date <span class="badge rounded-pill bg-dark">@Model.ReleaseDate.Value.Month/@Model.ReleaseDate.Value.Day/@Model.ReleaseDate.Value.Year</span></li>
                     <li class="list-group-item">Run Time <span class="badge rounded-pill bg-dark">@Model.RunTime m</span></li>
-                    <li class="list-group-item">Box Office <span class="badge rounded-pill bg-dark">$@Model.Revenue</span></li>
-                    <li class="list-group-item">Budget <span class="badge rounded-pill bg-dark">$@Model.Budget</span></li>
+                    <li class="list-group-item">Box Office <span class="badge rounded-pill bg-dark">@($"{@Model.Revenue:C2}") </span></li>
+                    <li class="list-group-item">Budget <span class="badge rounded-pill bg-dark">@string.Format("{0:C2}", @Model.Budget)</span></li>
                 </ul>
                 <br/>
                 <h5>TRAILERS</h5>

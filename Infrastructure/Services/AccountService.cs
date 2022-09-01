@@ -53,7 +53,7 @@ public class AccountService : IAccountService
             var user = await _userRepository.GetUserByEmail(model.Email);
             if (user == null)
             {
-                throw new Exception("Email does not exixts, try to register first");
+                throw new Exception("Email does not exists, try to register first");
             }
 
             var hashedPassword = GetHashedPassword(model.Password, user.Salt);
@@ -92,7 +92,7 @@ public class AccountService : IAccountService
            Convert.FromBase64String(salt),
            KeyDerivationPrf.HMACSHA512,
            10000,
-           256 / 8));
+           256 / 8)); 
             return hashed;
         }
     }
