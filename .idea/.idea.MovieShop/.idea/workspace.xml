@@ -5,7 +5,18 @@
     <projectFile profileName="IIS Express">MovieShopMVC/MovieShopMVC.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de26ce7b-902c-4f67-bec6-68233fad46f9" name="Changes" comment="" />
+    <list default="true" id="de26ce7b-902c-4f67-bec6-68233fad46f9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MovieShop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MovieShop/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/Views/Account/Login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/Views/Account/Login.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/Views/Account/Register.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/Views/Account/Register.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/MovieShopMVC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/MovieShopMVC.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/MovieShopMVC.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/MovieShopMVC.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/MovieShopMVC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/MovieShopMVC.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/MovieShopMVC.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/MovieShopMVC.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/ref/MovieShopMVC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/ref/MovieShopMVC.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/refint/MovieShopMVC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/refint/MovieShopMVC.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/obj/staticwebassets.pack.sentinel" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,7 +108,7 @@
       <workItem from="1661935472078" duration="135000" />
       <workItem from="1661935622254" duration="22000" />
       <workItem from="1661935697537" duration="32014000" />
-      <workItem from="1662044919290" duration="4230000" />
+      <workItem from="1662044919290" duration="4918000" />
     </task>
     <servers />
   </component>
