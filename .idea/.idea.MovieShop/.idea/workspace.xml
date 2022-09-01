@@ -6,19 +6,288 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de26ce7b-902c-4f67-bec6-68233fad46f9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/MovieShopMVC/Views/Movies/Genre.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ApplicationCore/Models/UserLoginSuccessModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/MessagePack.Annotations.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/MessagePack.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Microsoft.AspNetCore.Razor.Language.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Microsoft.Bcl.AsyncInterfaces.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Microsoft.Build.Locator.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Microsoft.CodeAnalysis.AnalyzerUtilities.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Microsoft.CodeAnalysis.CSharp.Features.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Microsoft.CodeAnalysis.CSharp.Scripting.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Microsoft.CodeAnalysis.CSharp.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Microsoft.CodeAnalysis.Features.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Microsoft.CodeAnalysis.Razor.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Microsoft.CodeAnalysis.Scripting.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Microsoft.CodeAnalysis.VisualBasic.Features.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Microsoft.CodeAnalysis.VisualBasic.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Microsoft.CodeAnalysis.Workspaces.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Microsoft.CodeAnalysis.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Microsoft.DiaSymReader.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Microsoft.DotNet.Scaffolding.Shared.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Microsoft.VisualStudio.Debugger.Contracts.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGeneration.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Newtonsoft.Json.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/NuGet.Common.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/NuGet.Configuration.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/NuGet.DependencyResolver.Core.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/NuGet.Frameworks.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/NuGet.LibraryModel.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/NuGet.Packaging.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/NuGet.ProjectModel.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/NuGet.Protocol.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/NuGet.Versioning.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/System.Composition.AttributedModel.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/System.Composition.Convention.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/System.Composition.Hosting.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/System.Composition.Runtime.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/System.Composition.TypedParts.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.VisualBasic.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.VisualBasic.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/dotnet-aspnet-codegenerator-design.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.VisualBasic.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.VisualBasic.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.VisualBasic.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.VisualBasic.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.VisualBasic.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.VisualBasic.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.VisualBasic.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.VisualBasic.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/runtimes/unix/lib/net6.0/System.Drawing.Common.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/runtimes/win/lib/net6.0/System.Drawing.Common.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.VisualBasic.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/obj/MovieShopMVC.csproj.codegeneration.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MovieShop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MovieShop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApplicationCore/Contracts/Repositories/IMovieRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/Contracts/Repositories/IMovieRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/Repositories/GenreRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Repositories/GenreRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/Repositories/MovieRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Repositories/MovieRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopMVC/Controllers/MoviesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/Controllers/MoviesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopMVC/Views/Movies/Details.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/Views/Movies/Details.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/Contracts/Repositories/IUserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/Contracts/Repositories/IUserRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/Contracts/Services/IAccountService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/Contracts/Services/IAccountService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/Entities/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/Entities/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/bin/Debug/net6.0/ApplicationCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/bin/Debug/net6.0/ApplicationCore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/bin/Debug/net6.0/ApplicationCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/bin/Debug/net6.0/ApplicationCore.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/net6.0/ApplicationCore.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/net6.0/ApplicationCore.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/net6.0/ApplicationCore.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/net6.0/ApplicationCore.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/net6.0/ApplicationCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/net6.0/ApplicationCore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/net6.0/ApplicationCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/net6.0/ApplicationCore.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/net6.0/ref/ApplicationCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/net6.0/ref/ApplicationCore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/net6.0/refint/ApplicationCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/net6.0/refint/ApplicationCore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Infrastructure.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Repositories/UserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Repositories/UserRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Services/AccountService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Services/AccountService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/bin/Debug/net6.0/ApplicationCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/bin/Debug/net6.0/ApplicationCore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/bin/Debug/net6.0/ApplicationCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/bin/Debug/net6.0/ApplicationCore.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/bin/Debug/net6.0/Infrastructure.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/bin/Debug/net6.0/Infrastructure.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/bin/Debug/net6.0/Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/bin/Debug/net6.0/Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/bin/Debug/net6.0/Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/bin/Debug/net6.0/Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/Infrastructure.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/Infrastructure.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/Infrastructure.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/Infrastructure.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/Infrastructure.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/Infrastructure.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/ref/Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/ref/Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/refint/Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/refint/Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Infrastructure.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Infrastructure.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/Controllers/AccountController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/MovieShopMVC.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/MovieShopMVC.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/Views/Account/Login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/Views/Account/Login.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/Views/Account/Register.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/Views/Account/Register.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/Views/Cast/Details.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/Views/Cast/Details.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ApplicationCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ApplicationCore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ApplicationCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ApplicationCore.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/MovieShopMVC.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/MovieShopMVC.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/MovieShopMVC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/MovieShopMVC.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/MovieShopMVC.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/MovieShopMVC.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/System.Drawing.Common.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/System.Drawing.Common.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/System.Security.Cryptography.ProtectedData.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/System.Security.Permissions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/System.Security.Permissions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/System.Windows.Extensions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/System.Windows.Extensions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/MovieShopMVC.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/MovieShopMVC.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/MovieShopMVC.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/MovieShopMVC.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/MovieShopMVC.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/MovieShopMVC.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/MovieShopMVC.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/MovieShopMVC.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/MovieShopMVC.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/MovieShopMVC.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/MovieShopMVC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/MovieShopMVC.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/MovieShopMVC.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/MovieShopMVC.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/ref/MovieShopMVC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/ref/MovieShopMVC.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/refint/MovieShopMVC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/refint/MovieShopMVC.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/obj/MovieShopMVC.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/obj/MovieShopMVC.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/obj/MovieShopMVC.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/obj/MovieShopMVC.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieShopMVC/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/obj/staticwebassets.pack.sentinel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopMVC/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/wwwroot/css/site.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +379,8 @@
       <workItem from="1661856123443" duration="32833000" />
       <workItem from="1661935472078" duration="135000" />
       <workItem from="1661935622254" duration="22000" />
-      <workItem from="1661935697537" duration="22736000" />
+      <workItem from="1661935697537" duration="32014000" />
+      <workItem from="1662044919290" duration="2217000" />
     </task>
     <servers />
   </component>
@@ -175,14 +445,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/MovieShopMVC/Views/Account/Login.cshtml</url>
-          <line>10</line>
-          <properties documentPath="$PROJECT_DIR$/MovieShopMVC/Views/Accounts/Login.cshtml" initialLine="12" isMultiMethodBreakpoint="true">
-            <option name="multiMethodBreakpoint" value="true" />
-          </properties>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Infrastructure/Data/MovieShopDbContext.cs</url>
