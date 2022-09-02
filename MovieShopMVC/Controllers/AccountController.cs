@@ -1,3 +1,4 @@
+using System.Net;
 using System.Security.Claims;
 using ApplicationCore.Contracts.Services;
 using ApplicationCore.Models;
@@ -65,5 +66,11 @@ public class AccountController : Controller
 
         return View();
 
+    }
+
+    public async Task<IActionResult> Logout()
+    {
+        await HttpContext.SignOutAsync();
+        return RedirectToAction("Login");
     }
 }
