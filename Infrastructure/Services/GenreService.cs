@@ -17,7 +17,8 @@ public class GenreService : IGenreService
         var genres = await _genreRepository.GetAllGenres();
         var genresModels = genres.Select(g => new GenreModel
         {
-            Id = g.Id, Name = g.Name
+            Id = g.Id,
+            Name = g.Name
         }).ToList();
         return genresModels;
     }

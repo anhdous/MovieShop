@@ -83,7 +83,9 @@ public class MovieService : IMovieService
         var movieCards = new List<MovieCardModel>();
         
         foreach (var movie in movies)
-            movieCards.Add(new MovieCardModel { Id = movie.Id, Title = movie.Title, PosterUrl = movie.PosterUrl });
+            movieCards.Add(new MovieCardModel { Id = movie.Id,
+                Title = movie.Title,
+                PosterUrl = movie.PosterUrl });
 
         return movieCards;
     }

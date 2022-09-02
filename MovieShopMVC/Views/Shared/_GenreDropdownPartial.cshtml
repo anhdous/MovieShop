@@ -1,10 +1,16 @@
-<div class="dropdown">
-    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+@using ApplicationCore.Contracts.Services
+@inject IGenreService genreService
+@{
+    var genres = await genreService.GetAllGenres();
+}
+<div class ="dropdown">
+    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         GENRES
     </button>
     <ul class="dropdown-menu">
-        <li><a class="dropdown-item" asp-controller="Movies" asp-action="GenreMovies">Genre 1</a></li>
-        <li><a class="dropdown-item" asp-controller="Movies" asp-action="GenreMovies">Genre 2</a></li>
-        <li><a class="dropdown-item" asp-controller="Movies" asp-action="GenreMovies">Genre 3</a></li>
+        @foreach(var genre in genres )
+        {
+            <li><a class="dropdown-item" asp-controller="Movies" asp-action="GenreMovies" asp-route-id="@genre.Id">@genre.Name</a></li>
+        }
     </ul>
 </div>
