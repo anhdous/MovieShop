@@ -1,5 +1,6 @@
 using ApplicationCore.Contracts.Repositories;
 using ApplicationCore.Entities;
+using ApplicationCore.Models;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 namespace Infrastructure.Repositories;
@@ -24,9 +25,24 @@ public class MovieRepository : IMovieRepository
         return movieDetails;
     }
 
-    public Task<Movie> MoviesByGenre(int id, int pageSize = 30, int pageNumber = 1)
+    public async Task<PagedResultSet<Movie>> GetMoviesByGenre(int genreId, int pageSize = 30, int pageNumber = 1)
     {
-        throw new NotImplementedException();
+        // get total row count
+        var totalMoviesCountOfGenre = await _movieShopDbContext.MovieGenres.Where(g => g.GenreId == genreId).CountAsync();
+        if (totalMoviesCountOfGenre == 0)
+        {
+            throw new Exception("No Movies found for this genre");
+        }
+        //get the actual data
+        var movies = await _movieShopDbContext.MovieGenres.Where(g => g.GenreId == genreId).Include(g => g.Movie)
+            .OrderByDescending(m => m.Movie.Revenue).Select(m=> new Movie
+            {
+                Id =m.MovieId,
+                PosterUrl = m.Movie.PosterUrl,
+                Title = m.Movie.Title
+            }).Skip((pageNumber - 1) * pageSize).Take(pageSize).ToListAsync();
+        var pagedMovies = new PagedResultSet<Movie>( movies, pageNumber, pageSize, totalMoviesCountOfGenre);
+        return pagedMovies;
     }
 
     public async Task<List<Movie>> GetTop30GrossingMovies()

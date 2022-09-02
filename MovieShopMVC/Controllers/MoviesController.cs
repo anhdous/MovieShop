@@ -24,15 +24,9 @@ public class MoviesController : Controller
         return View(movieDetails);
     }
     
-    public async Task<IActionResult> Genre( int id)
+    public async Task<IActionResult> GenreMovies( int Id, int pageSize = 30, int page = 1)
     {
-
-    // public MoviesByGenre(int id, int pageSize = 30, int pageNumber = 1)
-    // {
-    //     return View();
-    // }
-    // var movieDetails = await _movieService.GetMovieDetails(id);
-    // return View(movieDetails);
-    return View();
+        var pagedMovies = await _movieService.GetMoviesByPagination(Id, pageSize, page);
+        return View(pagedMovies);
     }
 }

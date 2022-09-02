@@ -10,4 +10,5 @@ public interface IMovieService
     // services will always return models/viewmodels/DTO (data transfer objects)
     Task<List<MovieCardModel>> GetTop30GrossingMovies();
     Task<MovieDetailsModel> GetMovieDetails(int movieId);
+    Task<PagedResultSet<MovieCardModel>> GetMoviesByPagination(int genreId, int pageSize = 30, int page = 1);
 }
