@@ -18,7 +18,7 @@ body {
 }
 
 #movie-section{
-    height:320px;
+    height:350px;
     background:darkblue;
 }
 #tmdbUrl{
@@ -35,4 +35,7 @@ body {
     color: black;
     width:85%; 
     margin: 0px 0px 20px 0px;
+}
+#movie-detail-poster{
+    height:350px;
 }

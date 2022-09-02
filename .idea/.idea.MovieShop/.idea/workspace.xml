@@ -6,13 +6,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de26ce7b-902c-4f67-bec6-68233fad46f9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ApplicationCore/Models/UserEditModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/Infra/CurrentUser.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/Infra/ICurrentUser.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/Views/User/BuyMovie.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/Views/User/EditProfile.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/Views/User/FavoriteMovie.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/Views/User/Favorites.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/Views/User/Purchases.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MovieShop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MovieShop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApplicationCore/Contracts/Services/IAccountService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/Contracts/Services/IAccountService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApplicationCore/bin/Debug/net6.0/ApplicationCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/bin/Debug/net6.0/ApplicationCore.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApplicationCore/bin/Debug/net6.0/ApplicationCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/bin/Debug/net6.0/ApplicationCore.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/net6.0/ApplicationCore.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/net6.0/ApplicationCore.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/net6.0/ApplicationCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/net6.0/ApplicationCore.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/net6.0/ApplicationCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/net6.0/ApplicationCore.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/Services/AccountService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Services/AccountService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/net6.0/ref/ApplicationCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/net6.0/ref/ApplicationCore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/net6.0/refint/ApplicationCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/net6.0/refint/ApplicationCore.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure/bin/Debug/net6.0/ApplicationCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/bin/Debug/net6.0/ApplicationCore.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure/bin/Debug/net6.0/ApplicationCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/bin/Debug/net6.0/ApplicationCore.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure/bin/Debug/net6.0/Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/bin/Debug/net6.0/Infrastructure.dll" afterDir="false" />
@@ -21,21 +30,27 @@
       <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/Infrastructure.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/Infrastructure.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieShopMVC/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/Controllers/AccountController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/Controllers/UserController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieShopMVC/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/Views/Account/Register.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/Views/Account/Register.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/Views/Home/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieShopMVC/Views/Movies/Details.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/Views/Movies/Details.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopMVC/Views/Movies/Genre.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/Views/Movies/Genre.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/Views/Shared/_MovieCard.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/Views/Shared/_MovieCard.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ApplicationCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ApplicationCore.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ApplicationCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/ApplicationCore.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Infrastructure.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/Infrastructure.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/MovieShopMVC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/MovieShopMVC.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/MovieShopMVC.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/bin/Debug/net6.0/MovieShopMVC.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/MovieShopMVC.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/MovieShopMVC.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/MovieShopMVC.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/MovieShopMVC.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/MovieShopMVC.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/MovieShopMVC.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/MovieShopMVC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/MovieShopMVC.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/MovieShopMVC.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/MovieShopMVC.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/ref/MovieShopMVC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/ref/MovieShopMVC.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/refint/MovieShopMVC.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/refint/MovieShopMVC.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieShopMVC/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/obj/staticwebassets.pack.sentinel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/wwwroot/css/site.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +143,7 @@
       <workItem from="1661935472078" duration="135000" />
       <workItem from="1661935622254" duration="22000" />
       <workItem from="1661935697537" duration="32014000" />
-      <workItem from="1662044919290" duration="12683000" />
+      <workItem from="1662044919290" duration="23966000" />
     </task>
     <servers />
   </component>
@@ -206,6 +221,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MovieShopMVC/Controllers/AccountController.cs</url>
+          <line>38</line>
+          <properties documentPath="$PROJECT_DIR$/MovieShopMVC/Controllers/AccountController.cs" initialLine="38" containingFunctionPresentation="method 'Login'">
+            <startOffsets>
+              <option value="1347" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1446" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
