@@ -6,7 +6,7 @@
 }
 <div class="rounded">
     <div class="container-fluid">
-        <div class="row" id ="movie-section">
+        <div class="row" id ="movie-section" style="background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(@Model.BackdropUrl); background-size: cover;">
             <div class="col-4 text-center">
                 <img src="@Model.PosterUrl" id="movie-detail-poster"/>
             </div>
@@ -38,6 +38,44 @@
                         <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#reviewModal" style="width:85%; margin: 50px 0px 20px 0px;">REVIEW</button>
                     </div>
                 </div>
+                <div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="reviewModalLabel">Review</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="dropdown">
+                                  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Rate this movie
+                                  </button>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-item">1</li>
+                                        <li class="dropdown-item">2</li>
+                                        <li class="dropdown-item">3</li>
+                                        <li class="dropdown-item">4</li>
+                                        <li class="dropdown-item">5</li>
+                                        <li class="dropdown-item">6</li>
+                                        <li class="dropdown-item">7</li>
+                                        <li class="dropdown-item">8</li>
+                                        <li class="dropdown-item">9</li>
+                                        <li class="dropdown-item">10</li>
+                                    </ul>
+                                </div>
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="review-text" class="col-form-label">Review:</label>
+                                        <textarea class="form-control" id="review-text"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
                 <div class="row">
                     <div class="col">
                         <button type="button" class="btn" id="buy-button" data-bs-toggle="modal" data-bs-target="#buyModal">BUY @($"{@Model.Price:C2}")</button>
@@ -47,11 +85,11 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Confirmation</h5>
+                                <h5 class="modal-title" id="buyModalLabel">Confirmation</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                $@Model.Price
+                                You will have to pay $@Model.Price
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Purchase</button>
@@ -93,9 +131,11 @@
                     {
                         <li class="list-group-item">
                             <ul class="list-group list-group-horizontal">
-                                <li class="list-group-item border-0"><a asp-controller="Cast" asp-action="Details" asp-route-id="@cast.Id">
-                                            <img class="rounded-circle" style="height:35px" src="@cast.ProfilePath"/>
-                                        </a></li>
+                                <li class="list-group-item border-0">
+                                    <a asp-controller="Cast" asp-action="Details" asp-route-id="@cast.Id">
+                                        <img class="rounded-circle" style="height:35px" src="@cast.ProfilePath"/>
+                                    </a>
+                                </li>
                                 <li class="list-group-item border-0" style="width:200px;">@cast.Name </li>
                                 <li class="list-group-item border-0">@cast.Character</li>
                             </ul>

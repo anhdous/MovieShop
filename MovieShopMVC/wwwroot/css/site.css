@@ -19,8 +19,10 @@ body {
 
 #movie-section{
     height:350px;
-    background:darkblue;
-}
+}#movie-section{
+     height:350px;
+     background:darkblue;
+ }
 #tmdbUrl{
     text-decoration: none;
     color: black;

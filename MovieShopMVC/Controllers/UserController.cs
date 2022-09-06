@@ -16,7 +16,7 @@ public class UserController : Controller
     [HttpGet]
     public async Task<IActionResult> Purchases()
     {
-        //Get all the movies purchased by user by user id
+        // Get all the movies purchased by user by user id
         // httpcontext.user.claims and then call the database and get the information to the view
         // before doing this, have to check the IsAuthenticated flag
         var userId = _currentUser.UserId;
@@ -47,4 +47,5 @@ public class UserController : Controller
     {
         return View();
     }
+    
 }
