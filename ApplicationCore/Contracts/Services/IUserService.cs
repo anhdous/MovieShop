@@ -6,7 +6,7 @@ public interface IUserService
 {
     Task PurchaseMovie(PurchaseRequestModel purchaseRequest, int userId);
     Task IsMoviePurchased(PurchaseRequestModel purchaseRequest, int userId);
-    Task GetAllPurchasesForUser(int id);
+    Task<List<MovieCardModel>> GetAllPurchasesForUser(int id);
     Task GetPurchasesDetails(int userId, int movieId);
     Task AddFavorite(FavoriteRequestModel favoriteRequest);
     Task RemoveFavorite(FavoriteRequestModel favoriteRequest);

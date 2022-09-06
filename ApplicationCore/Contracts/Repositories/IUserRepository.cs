@@ -6,4 +6,6 @@ public interface IUserRepository
 {
     Task<User> GetUserByEmail(string email);
     Task<User> AddUser(User user);
+    Task<List<Movie>> GetAllPurchasesForUser(int userId);
+
 }

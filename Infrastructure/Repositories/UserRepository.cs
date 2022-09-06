@@ -20,6 +20,11 @@ public class UserRepository : IUserRepository
         return user;
         }
 
+    public Task<List<Movie>> GetAllPurchasesForUser(int userId)
+    {
+        throw new NotImplementedException();
+    }
+
     public async Task<User> GetUserByEmail(string email)
     {
         var user = await _dbContext.Users.FirstOrDefaultAsync(u => u.Email == email);

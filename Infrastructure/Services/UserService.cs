@@ -15,7 +15,7 @@ public class UserService : IUserService
         throw new NotImplementedException();
     }
 
-    public Task GetAllPurchasesForUser(int id)
+    public Task<List<MovieCardModel>> GetAllPurchasesForUser(int id)
     {
         throw new NotImplementedException();
     }
