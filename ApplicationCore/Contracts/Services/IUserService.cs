@@ -1,13 +1,15 @@
+using ApplicationCore.Entities;
 using ApplicationCore.Models;
 
 namespace ApplicationCore.Contracts.Services;
 
 public interface IUserService
 {
-    Task PurchaseMovie(PurchaseRequestModel purchaseRequest, int userId);
+    Task<Purchase> PurchaseMovie(PurchaseRequestModel purchaseRequest, int userId);
     Task IsMoviePurchased(PurchaseRequestModel purchaseRequest, int userId);
     Task<List<MovieCardModel>> GetAllPurchasesForUser(int id);
-    Task GetPurchasesDetails(int userId, int movieId);
+
+    Task<PurchaseDetailsModel> GetPurchasesDetails(int userId, int movieId);
     Task AddFavorite(FavoriteRequestModel favoriteRequest);
     Task RemoveFavorite(FavoriteRequestModel favoriteRequest);
     Task FavoriteExists(int id, int movieId);

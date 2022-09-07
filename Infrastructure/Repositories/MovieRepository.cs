@@ -33,7 +33,7 @@ public class MovieRepository : IMovieRepository
         {
             throw new Exception("No Movies found for this genre");
         }
-        //get the actual data
+        //get the actual data 
         var movies = await _movieShopDbContext.MovieGenres.Where(g => g.GenreId == genreId).Include(g => g.Movie)
             .OrderByDescending(m => m.Movie.Revenue).Select(m=> new Movie
             {

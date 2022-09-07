@@ -8,6 +8,6 @@ public class Purchase
     public User User { get; set; }
 
     public DateTime PurchaseDateTime { get; set; }
-    public string PurchaseNumber { get; set; }
+    public Guid PurchaseNumber { get; set; }
     public decimal TotalPrice { get; set; }
 }

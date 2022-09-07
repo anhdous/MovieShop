@@ -1,3 +1,5 @@
+using ApplicationCore.Contracts.Repositories;
+using ApplicationCore.Contracts.Services;
 using ApplicationCore.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -8,6 +10,7 @@ namespace MovieShopMVC.Controllers;
 public class UserController : Controller
 {
     private readonly ICurrentUser _currentUser;
+    private readonly IUserService _userService;
 
     public UserController(ICurrentUser currentUser)
     {
@@ -20,7 +23,8 @@ public class UserController : Controller
         // httpcontext.user.claims and then call the database and get the information to the view
         // before doing this, have to check the IsAuthenticated flag
         var userId = _currentUser.UserId;
-        return View();
+        var purchases = await _userService.GetAllPurchasesForUser(userId);
+        return View(purchases);
     }
     [HttpGet]
     public async Task<IActionResult> Favorites()

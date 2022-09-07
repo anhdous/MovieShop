@@ -20,7 +20,16 @@ public class UserRepository : IUserRepository
         return user;
         }
 
-    public Task<List<Movie>> GetAllPurchasesForUser(int userId)
+    public async Task<User> GetAllPurchasesForUser(int userId)
+    {
+        //select * from user where id=1 join movie, purchase
+        var userDetails = await _dbContext.Users
+            .Include(m => m.PurchaseMovies).ThenInclude(m => m.Movie)
+            .FirstOrDefaultAsync(u =>u.Id == userId);
+        return userDetails;
+    }
+
+    public Task<Purchase> GetPurchasesDetails(int userId, int movieId)
     {
         throw new NotImplementedException();
     }

@@ -41,3 +41,7 @@ body {
 #movie-detail-poster{
     height:350px;
 }
+.rounded-pill a{
+    color: white;
+    text-decoration: none;
+}

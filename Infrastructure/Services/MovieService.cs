@@ -1,5 +1,6 @@
 using ApplicationCore.Contracts.Repositories;
 using ApplicationCore.Contracts.Services;
+using ApplicationCore.Entities;
 using ApplicationCore.Models;
 using Infrastructure.Repositories;
 
@@ -8,15 +9,19 @@ namespace Infrastructure.Services;
 public class MovieService : IMovieService
 {
     private readonly IMovieRepository _movieRepository;
+    private readonly IUserRepository _userRepository;
 
-    public MovieService(IMovieRepository movieRepository)
+    public MovieService(IMovieRepository movieRepository, IUserRepository userRepository)
     {
         _movieRepository = movieRepository;
+        _userRepository = userRepository;
     }
 
     public async Task<MovieDetailsModel> GetMovieDetails(int movieId)
     {
         var movieDetails = await _movieRepository.GetById(movieId);
+
+        // var purchased = await _userRepository.GetPurchasesDetails( userId,movieId);
         var movieDetailsModel = new MovieDetailsModel
         {
             Id = movieDetails.Id,
@@ -32,7 +37,7 @@ public class MovieService : IMovieService
             TmdbUrl = movieDetails.TmdbUrl,
             RunTime = movieDetails.RunTime,
             Tagline = movieDetails.Tagline,
-            Price = movieDetails.Price
+            Price = movieDetails.Price,
 
         };
         foreach (var trailer in movieDetails.Trailers)
@@ -61,6 +66,37 @@ public class MovieService : IMovieService
             });
         }
 
+        // decimal? rating = 0;
+        // foreach (var review in movieDetails.Reviews)
+        // {
+        //     movieDetailsModel.Reviews.Add(new ReviewRequestModel
+        //     {
+        //         MovieId = review.MovieId,
+        //         UserId = review.UserId,
+        //         CreatedDate = review.CreatedDate,
+        //         ReviewText = review.ReviewText,
+        //         Rating = review.Rating
+        //     });
+        //     rating += review.Rating;
+        // }
+        //
+        // try
+        // {
+        //     rating /= movieDetails.Reviews.Count();
+        // }
+        // catch (DivideByZeroException)
+        // {
+        //     rating = null;
+        //     
+        // }
+        //
+        // movieDetailsModel.Rating = rating != null ? Math.Round(rating.Value, 1) : null;
+
+        //
+        // if (purchased != null)
+        // {
+        //     movieDetailsModel.IsMoviePurchased = true;
+        // }
         return movieDetailsModel;
     }
 
@@ -74,7 +110,7 @@ public class MovieService : IMovieService
             PosterUrl = m.PosterUrl,
             Title = m.Title, 
         }));
-        return new PagedResultSet<MovieCardModel>(movieCards, pageSize, page, movies.TotalRowCount);
+        return new PagedResultSet<MovieCardModel>(movieCards, page, pageSize, movies.TotalRowCount);
     }
 
     public async Task<List<MovieCardModel>> GetTop30GrossingMovies()

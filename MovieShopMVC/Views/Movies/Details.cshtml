@@ -19,12 +19,12 @@
                 </p>
                 <div class="row">
                     <div class="col-auto">
-                        <p>@Model.RunTime | @Model.ReleaseDate.Value.Year</p>
+                        <p>@Model.RunTime m | @Model.ReleaseDate.Value.Year</p>
                     </div>
                     <div class="col-auto">
                         @foreach (var genre in @Model.Genres)
                         {
-                            <span class="badge rounded-pill bg-secondary">@genre.Name</span>  
+                            <span class="badge rounded-pill bg-secondary"><a asp-controller="Movies" asp-action="GenreMovies" asp-route-id="@genre.Id">@genre.Name</a></span>  
                         }
                     </div>
                 </div>
@@ -71,7 +71,8 @@
                                 </form>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Submit</button>
+                                @* <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Submit</button> *@
+                                <input type="submit" value="Submit" class="btn btn-secondary" data-bs-dismiss="modal"/>
                             </div>
                         </div>
                     </div>

@@ -1,6 +1,6 @@
 namespace ApplicationCore.Models;
 
-public class PurchaseRequestModel
+public class PurchaseDetailsModel
 {
     public Guid PurchaseNumber => Guid.NewGuid();
     public int MovieId { get; set; }
