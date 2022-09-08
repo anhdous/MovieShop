@@ -20,7 +20,10 @@ public class MovieService : IMovieService
     public async Task<MovieDetailsModel> GetMovieDetails(int movieId)
     {
         var movieDetails = await _movieRepository.GetById(movieId);
-
+        if (movieDetails == null)
+        {
+            return null;
+        }
         // var purchased = await _userRepository.GetPurchasesDetails( userId,movieId);
         var movieDetailsModel = new MovieDetailsModel
         {

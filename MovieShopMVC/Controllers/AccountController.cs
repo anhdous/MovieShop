@@ -45,7 +45,7 @@ public class AccountController : Controller
             
             return LocalRedirect("~/");
         }
-        return View();
+        return View(model);
     }
     public IActionResult Register()
     {

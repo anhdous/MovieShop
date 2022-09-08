@@ -39,4 +39,17 @@ public class UserRepository : IUserRepository
         var user = await _dbContext.Users.FirstOrDefaultAsync(u => u.Email == email);
         return user;
         }
+    // public async Task<Review> DeleteMovieReview(Review review)
+    // {
+    //     _dbContext.Review.Remove(review);
+    //     await _dbContext.SaveChangesAsync();
+    //     return review
+    // }
+    // public async Task<Review> UpdateMovieReview(Review review)
+    // {
+    //     _dbContext.Entry(review).State = EntityState.Modified;
+    //     await _dbContext.SaveChangesAsync();
+    //     return review;
+    // }
+
 }
