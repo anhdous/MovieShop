@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "37PjvpDIOlH1TGHavDKsUjjsLH++zSvKQi1vuK7YJ6cWDyW5Z5LM4WvvFKF+mlEMzcp+IF5a5X8okW0CeH74mw==",
+  "dgSpecHash": "YQJM93d2/7m7g/ZvyKaGgwJAG0lzgJTqRPhzY2zLsbgpO/oIDsJQrVdx28qmJZVXkqdOmKKN9bhCyrYnMn3ERw==",
   "success": true,
   "projectFilePath": "/Users/anhdo.us/Desktop/July2022/MovieShop/MovieShopAPI/MovieShopAPI.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "/Users/anhdo.us/.nuget/packages/messagepack/2.1.152/messagepack.2.1.152.nupkg.sha512",
     "/Users/anhdo.us/.nuget/packages/messagepack.annotations/2.1.152/messagepack.annotations.2.1.152.nupkg.sha512",
     "/Users/anhdo.us/.nuget/packages/messagepackanalyzer/2.1.152/messagepackanalyzer.2.1.152.nupkg.sha512",
+    "/Users/anhdo.us/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/6.0.8/microsoft.aspnetcore.authentication.jwtbearer.6.0.8.nupkg.sha512",
     "/Users/anhdo.us/.nuget/packages/microsoft.aspnetcore.cryptography.internal/6.0.8/microsoft.aspnetcore.cryptography.internal.6.0.8.nupkg.sha512",
     "/Users/anhdo.us/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/6.0.8/microsoft.aspnetcore.cryptography.keyderivation.6.0.8.nupkg.sha512",
     "/Users/anhdo.us/.nuget/packages/microsoft.aspnetcore.razor.language/6.0.0/microsoft.aspnetcore.razor.language.6.0.0.nupkg.sha512",
@@ -54,8 +55,8 @@
     "/Users/anhdo.us/.nuget/packages/microsoft.identitymodel.abstractions/6.23.0/microsoft.identitymodel.abstractions.6.23.0.nupkg.sha512",
     "/Users/anhdo.us/.nuget/packages/microsoft.identitymodel.jsonwebtokens/6.23.0/microsoft.identitymodel.jsonwebtokens.6.23.0.nupkg.sha512",
     "/Users/anhdo.us/.nuget/packages/microsoft.identitymodel.logging/6.23.0/microsoft.identitymodel.logging.6.23.0.nupkg.sha512",
-    "/Users/anhdo.us/.nuget/packages/microsoft.identitymodel.protocols/6.8.0/microsoft.identitymodel.protocols.6.8.0.nupkg.sha512",
-    "/Users/anhdo.us/.nuget/packages/microsoft.identitymodel.protocols.openidconnect/6.8.0/microsoft.identitymodel.protocols.openidconnect.6.8.0.nupkg.sha512",
+    "/Users/anhdo.us/.nuget/packages/microsoft.identitymodel.protocols/6.10.0/microsoft.identitymodel.protocols.6.10.0.nupkg.sha512",
+    "/Users/anhdo.us/.nuget/packages/microsoft.identitymodel.protocols.openidconnect/6.10.0/microsoft.identitymodel.protocols.openidconnect.6.10.0.nupkg.sha512",
     "/Users/anhdo.us/.nuget/packages/microsoft.identitymodel.tokens/6.23.0/microsoft.identitymodel.tokens.6.23.0.nupkg.sha512",
     "/Users/anhdo.us/.nuget/packages/microsoft.net.stringtools/1.0.0/microsoft.net.stringtools.1.0.0.nupkg.sha512",
     "/Users/anhdo.us/.nuget/packages/microsoft.netcore.platforms/3.1.0/microsoft.netcore.platforms.3.1.0.nupkg.sha512",

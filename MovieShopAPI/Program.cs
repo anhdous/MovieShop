@@ -1,9 +1,13 @@
+using System.Text;
 using ApplicationCore.Contracts.Repositories;
 using ApplicationCore.Contracts.Services;
 using Infrastructure.Data;
 using Infrastructure.Repositories;
 using Infrastructure.Services;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using MovieShopAPI.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,6 +34,17 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddDbContext<MovieShopDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("MovieShopDbConnection")));
 
+//API us gonna use JWT authentication so that it can look at the incoming request and look for token and if valid it will get the claims in the HttpContext
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options => options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateAudience = false,
+        ValidateIssuer = false,
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["secretKey"]))
+        
+    });
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -39,8 +54,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UserMovieShopExtensionMiddleware();
 app.UseHttpsRedirection();
-
+//Make sure you add Authentication Middleware
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

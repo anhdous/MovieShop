@@ -265,3 +265,4 @@
 /Users/anhdo.us/Desktop/July2022/MovieShop/MovieShopAPI/bin/Debug/net6.0/Infrastructure.dll
 /Users/anhdo.us/Desktop/July2022/MovieShop/MovieShopAPI/bin/Debug/net6.0/Infrastructure.pdb
 /Users/anhdo.us/Desktop/July2022/MovieShop/MovieShopAPI/bin/Debug/net6.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/anhdo.us/Desktop/July2022/MovieShop/MovieShopAPI/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll

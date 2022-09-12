@@ -39,7 +39,7 @@ namespace MovieShopAPI.Controllers
                return NotFound(new { errorMessage = "No Movies Found" });
            }
 
-           return Ok(movies );
+           return Ok(movies);
            
         }
 
