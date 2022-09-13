@@ -8,37 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de26ce7b-902c-4f67-bec6-68233fad46f9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/MovieShopAPI/Middlewares/MovieShopExceptionMiddleware.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MovieShopAPI/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MovieShop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MovieShop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopAPI/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/Controllers/AccountController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopAPI/Controllers/CastController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/Controllers/CastController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopAPI/Controllers/MoviesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/Controllers/MoviesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopAPI/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/Controllers/UserController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopAPI/MovieShopAPI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/MovieShopAPI.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieShopAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopAPI/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopAPI/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopAPI/bin/Debug/net6.0/MovieShopAPI.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/bin/Debug/net6.0/MovieShopAPI.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopAPI/bin/Debug/net6.0/MovieShopAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/bin/Debug/net6.0/MovieShopAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopAPI/bin/Debug/net6.0/MovieShopAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/bin/Debug/net6.0/MovieShopAPI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/MovieShopAPI.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/MovieShopAPI.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/MovieShopAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/MovieShopAPI.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/MovieShopAPI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/MovieShopAPI.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/MovieShopAPI.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/MovieShopAPI.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/MovieShopAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/MovieShopAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/MovieShopAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/MovieShopAPI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/ref/MovieShopAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/ref/MovieShopAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/refint/MovieShopAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/refint/MovieShopAPI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopAPI/obj/MovieShopAPI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/obj/MovieShopAPI.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopAPI/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopAPI/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopAPI/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopAPI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopAPI/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/obj/staticwebassets.pack.sentinel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopMVC/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopAPI/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +52,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.MovieShopAPI">
+  <component name="RunManager" selected=".NET Launch Settings Profile.MovieShopMVC">
     <configuration name="MovieShopAPI" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/MovieShopAPI/MovieShopAPI.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
@@ -167,6 +139,7 @@
       <workItem from="1662044919290" duration="79188000" />
       <workItem from="1662652444674" duration="18050000" />
       <workItem from="1662730184718" duration="5961000" />
+      <workItem from="1663013270348" duration="1875000" />
     </task>
     <servers />
   </component>

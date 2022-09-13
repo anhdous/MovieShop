@@ -56,6 +56,12 @@ if (app.Environment.IsDevelopment())
 
 app.UserMovieShopExtensionMiddleware();
 app.UseHttpsRedirection();
+
+app.UseCors(policy =>
+{
+    policy.WithOrigins(builder.Configuration["AngularURl"]).AllowAnyMethod().AllowAnyHeader().AllowCredentials();
+});
+
 //Make sure you add Authentication Middleware
 app.UseAuthentication();
 app.UseAuthorization();
