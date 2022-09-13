@@ -9,8 +9,16 @@
   <component name="ChangeListManager">
     <list default="true" id="de26ce7b-902c-4f67-bec6-68233fad46f9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MovieShop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MovieShop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MovieShopAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieShopAPI/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopAPI/bin/Debug/net6.0/MovieShopAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/bin/Debug/net6.0/MovieShopAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopAPI/bin/Debug/net6.0/MovieShopAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/bin/Debug/net6.0/MovieShopAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopAPI/bin/Debug/net6.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/bin/Debug/net6.0/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/MovieShopAPI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/MovieShopAPI.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/MovieShopAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/MovieShopAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/MovieShopAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/MovieShopAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/ref/MovieShopAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/ref/MovieShopAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/refint/MovieShopAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/refint/MovieShopAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopAPI/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/obj/staticwebassets.pack.sentinel" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +60,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.MovieShopMVC">
+  <component name="RunManager" selected=".NET Launch Settings Profile.MovieShopAPI">
     <configuration name="MovieShopAPI" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/MovieShopAPI/MovieShopAPI.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
@@ -140,6 +148,7 @@
       <workItem from="1662652444674" duration="18050000" />
       <workItem from="1662730184718" duration="5961000" />
       <workItem from="1663013270348" duration="1875000" />
+      <workItem from="1663083295186" duration="1861000" />
     </task>
     <servers />
   </component>
