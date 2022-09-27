@@ -34,7 +34,7 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddDbContext<MovieShopDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("MovieShopDbConnection")));
 
-//API us gonna use JWT authentication so that it can look at the incoming request and look for token and if valid it will get the claims in the HttpContext
+//API is gonna use JWT authentication so that it can look at the incoming request and look for Token and if valid it will get the claims in the HttpContext
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options => options.TokenValidationParameters = new TokenValidationParameters
     {
@@ -48,13 +48,14 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+// When you get a http request from client/browser
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-app.UserMovieShopExtensionMiddleware();
+app.UserMovieShopExceptionMiddleware();
 app.UseHttpsRedirection();
 
 app.UseCors(policy =>

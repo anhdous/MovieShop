@@ -38,13 +38,27 @@ namespace MovieShopAPI.Controllers
             var user = await _accountService.ValidateUser(model);
             if (user != null)
             {
-                //create token
+                // create token
                 var jwtToken = CreateJwtToken(user);
                 return Ok(new {token = jwtToken });
+                
+                //Clients: iOS, Android, Angular, React, Java
+                //create JWT(Json Web Token) token instead of Cookies
+                // Client will send email/password to API  POST to Url
+                //API will validate the email/password and if valid then API will create the JWT token and send to client
+                // Its Client's responsibility to store the token some where
+                // Angular, React( local storage or session storage in browser)
+                // iOS/Android, device
+                // When client need some secure information or needs to perform any operation that requires users to be 
+                // authenticated then client need to send the token to the API in the Http Header
+                // Once the API receives the token from client it will validate the JWT token and if valid 
+                // it will send data back to the client
+                //If JWT token is invalid or token is expired then API will send 401 Unauthorized
+                
             }
 
-            throw new UnauthorizedAccessException("Please check email and password");
-            return Unauthorized(new { errorMessage = "Please check email and password" });
+            throw new UnauthorizedAccessException(" Please check email and password");
+            //return Unauthorized(new { errorMessage = "Please check email and password" });
 
         }
 
@@ -58,7 +72,8 @@ namespace MovieShopAPI.Controllers
                 new Claim(JwtRegisteredClaimNames.FamilyName, user.LastName),
                 new Claim(JwtRegisteredClaimNames.GivenName, user.FirstName),
                 new Claim("Country", "USA"),
-                new Claim("language", "english")
+                new Claim("language", "english"),
+                new Claim("isAdmin", (user.Id==1) ? "true": "false")
 
             };
             var identityClaims = new ClaimsIdentity();
@@ -72,7 +87,7 @@ namespace MovieShopAPI.Controllers
             // Specify the expiration of the token
             var tokenExpiration = DateTime.UtcNow.AddHours(2);
             
-            //create an object with all the above information to create a token
+            //create an object with all the above information to create the token
             var tokenDetails = new SecurityTokenDescriptor
             {
                 Subject = identityClaims,

@@ -64,6 +64,7 @@ public class AccountService : IAccountService
                 {
                     Id = user.Id, 
                     Email = user.Email,
+                    DateOfBirth = user.DateOfBirth.GetValueOrDefault(),
                     FirstName = user.FirstName,
                     LastName = user.LastName
                 };

@@ -15,6 +15,7 @@ public class AccountController : Controller
     {
         _accountService = accountService;
     }
+    [HttpGet]
     public IActionResult Login()
     {
         return View();
@@ -23,10 +24,15 @@ public class AccountController : Controller
     public async Task<IActionResult> Login(UserLoginModel model)
     {
         var userSuccess = await _accountService.ValidateUser(model);
-        if (userSuccess!= null && userSuccess.Id >0)
+        if (userSuccess!= null)
         {
             // password matches
             // redirect to home page
+            // create a cookie, cookies are always sent from browser automatically to server
+            // Inside the cookie we store encrypted information (User claims) that Server can recognize and tell 
+            // whether user is logged in or not
+            // Cookie should have an expiration time
+            // 2 hours
             // create claims userid, email, firstname, lastname
             var claims = new List<Claim>
             {
@@ -34,12 +40,22 @@ public class AccountController : Controller
                 new Claim(ClaimTypes.NameIdentifier, userSuccess.Id.ToString()),
                 new Claim(ClaimTypes.Surname, userSuccess.LastName),
                 new Claim(ClaimTypes.GivenName, userSuccess.FirstName),
-                new Claim("language", "english")
+                new Claim("language", "english"),
+
             };
-            //identity object
+            // create cookie and cookie will have the above claims information
+            // along with expiration time, don't store above information in the cookie as plain text, instead encrypt the above information
+            
+            // We need to tell ASP.NET application that we are using Cookie based Authentication so that
+            // ASp.NET can generate Cookie based on the settings we provide
+            
+            //identity object that will identify the user with claims
             var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
             
-            // create cookie with some expiration time
+            // principal object which is used by ASP.NET to recognize the USER
+            // create cookie with above information
+            
+            //HttpContext => Encapsulates your Http Request information
             await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme,
                 new ClaimsPrincipal(claimsIdentity));
             
@@ -56,15 +72,15 @@ public class AccountController : Controller
     [HttpPost]
     public async Task<IActionResult> Register(UserRegisterModel model)
     {
-        var userId = await _accountService.RegisterUser(model);
-
-        if (userId>0)
+        if (ModelState.IsValid)
         {
+            //Model Binding
+            var userId = await _accountService.RegisterUser(model);
             // redirect to login page
             return RedirectToAction("Login");
         }
 
-        return View();
+        return View(model);
 
     }
 
