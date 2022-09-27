@@ -23,6 +23,10 @@ public class AccountController : Controller
     [HttpPost]
     public async Task<IActionResult> Login(UserLoginModel model)
     {
+        if (!ModelState.IsValid)
+        {
+            return View();
+        }
         var userSuccess = await _accountService.ValidateUser(model);
         if (userSuccess!= null)
         {

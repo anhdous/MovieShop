@@ -7,7 +7,13 @@
     <projectFile profileName="IIS Express">MovieShopAPI/MovieShopAPI.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de26ce7b-902c-4f67-bec6-68233fad46f9" name="Changes" comment="" />
+    <list default="true" id="de26ce7b-902c-4f67-bec6-68233fad46f9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ApplicationCore/Validators/MinimumYearAllowedAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MovieShop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MovieShop/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/Models/UserLoginModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/Models/UserLoginModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/Models/UserRegisterModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/Models/UserRegisterModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/Controllers/AccountController.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -140,6 +146,7 @@
       <workItem from="1663352341169" duration="409000" />
       <workItem from="1664131135974" duration="825000" />
       <workItem from="1664139589512" duration="18249000" />
+      <workItem from="1664281947485" duration="1228000" />
     </task>
     <servers />
   </component>

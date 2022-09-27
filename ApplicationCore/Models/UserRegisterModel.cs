@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ApplicationCore.Validators;
 
 namespace ApplicationCore.Models
 {
@@ -29,6 +30,9 @@ namespace ApplicationCore.Models
         
 
         [Required (ErrorMessage="Date of Birth should not be empty")]
+        // year should not be less than 1900
+        // Minimum age should be 15
+        [MinimumYearAllowed]
         public DateTime DateOfBirth { get; set; }
     }
 }
