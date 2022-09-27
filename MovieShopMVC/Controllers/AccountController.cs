@@ -63,6 +63,7 @@ public class AccountController : Controller
         }
         return View(model);
     }
+    
     public IActionResult Register()
     {
         // showing empty register view
@@ -80,7 +81,7 @@ public class AccountController : Controller
             return RedirectToAction("Login");
         }
 
-        return View(model);
+        return View();
 
     }
 
