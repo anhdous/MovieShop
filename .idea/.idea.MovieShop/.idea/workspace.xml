@@ -8,11 +8,74 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de26ce7b-902c-4f67-bec6-68233fad46f9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ApplicationCore/Validators/MinimumYearAllowedAttribute.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShop.UnitTests/MovieServiceUnitTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShop.UnitTests/MovieShop.UnitTests.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShop.UnitTests/Usings.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShop.UnitTests/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShop.UnitTests/obj/Debug/net6.0/MovieShop.UnitTests.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShop.UnitTests/obj/Debug/net6.0/MovieShop.UnitTests.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShop.UnitTests/obj/Debug/net6.0/MovieShop.UnitTests.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShop.UnitTests/obj/Debug/net6.0/MovieShop.UnitTests.GlobalUsings.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShop.UnitTests/obj/Debug/net6.0/MovieShop.UnitTests.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShop.UnitTests/obj/Debug/net6.0/MovieShop.UnitTests.csproj.AssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShop.UnitTests/obj/MovieShop.UnitTests.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShop.UnitTests/obj/MovieShop.UnitTests.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShop.UnitTests/obj/MovieShop.UnitTests.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShop.UnitTests/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShop.UnitTests/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShop.UnitTests/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShop.UnitTests/obj/rider.project.restore.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MovieShopMVC/Infra/MovieShopExceptionMiddleware.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MovieShop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MovieShop/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/Entities/Trailer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/Entities/Trailer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/Models/MovieDetailsModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/Models/MovieDetailsModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApplicationCore/Models/UserLoginModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/Models/UserLoginModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ApplicationCore/Models/UserRegisterModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/Models/UserRegisterModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/bin/Debug/net6.0/ApplicationCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/bin/Debug/net6.0/ApplicationCore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/bin/Debug/net6.0/ApplicationCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/bin/Debug/net6.0/ApplicationCore.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/net6.0/ApplicationCore.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/net6.0/ApplicationCore.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/net6.0/ApplicationCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/net6.0/ApplicationCore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/net6.0/ApplicationCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/net6.0/ApplicationCore.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/net6.0/ref/ApplicationCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/net6.0/ref/ApplicationCore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/Debug/net6.0/refint/ApplicationCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/Debug/net6.0/refint/ApplicationCore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ApplicationCore/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ApplicationCore/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Repositories/MovieRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Repositories/MovieRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/Services/MovieService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Services/MovieService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/bin/Debug/net6.0/ApplicationCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/bin/Debug/net6.0/ApplicationCore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/bin/Debug/net6.0/ApplicationCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/bin/Debug/net6.0/ApplicationCore.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/bin/Debug/net6.0/Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/bin/Debug/net6.0/Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/bin/Debug/net6.0/Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/bin/Debug/net6.0/Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/Infrastructure.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/Infrastructure.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/ref/Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/ref/Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/refint/Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/net6.0/refint/Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShop.sln" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShop.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopAPI/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/Controllers/AccountController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopAPI/Middlewares/MovieShopExceptionMiddleware.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/Middlewares/MovieShopExceptionMiddleware.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopAPI/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopAPI/bin/Debug/net6.0/ApplicationCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/bin/Debug/net6.0/ApplicationCore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopAPI/bin/Debug/net6.0/ApplicationCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/bin/Debug/net6.0/ApplicationCore.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopAPI/bin/Debug/net6.0/Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/bin/Debug/net6.0/Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopAPI/bin/Debug/net6.0/Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/bin/Debug/net6.0/Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopAPI/bin/Debug/net6.0/MovieShopAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/bin/Debug/net6.0/MovieShopAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopAPI/bin/Debug/net6.0/MovieShopAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/bin/Debug/net6.0/MovieShopAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/MovieShopAPI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/MovieShopAPI.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/MovieShopAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/MovieShopAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/MovieShopAPI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/MovieShopAPI.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/ref/MovieShopAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/ref/MovieShopAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/refint/MovieShopAPI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/obj/Debug/net6.0/refint/MovieShopAPI.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopAPI/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopAPI/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopAPI/obj/staticwebassets.pack.sentinel" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieShopMVC/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/Controllers/AccountController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/Controllers/MoviesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/Controllers/MoviesController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/Views/Account/Register.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/Views/Account/Register.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/MovieShopMVC.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/MovieShopMVC.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/MovieShopMVC.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/obj/Debug/net6.0/MovieShopMVC.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieShopMVC/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MovieShopMVC/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +209,11 @@
       <workItem from="1663352341169" duration="409000" />
       <workItem from="1664131135974" duration="825000" />
       <workItem from="1664139589512" duration="18249000" />
-      <workItem from="1664281947485" duration="1228000" />
+      <workItem from="1664281947485" duration="12798000" />
+      <workItem from="1667491007411" duration="6852000" />
+      <workItem from="1667852482647" duration="4525000" />
+      <workItem from="1668031606182" duration="2231000" />
+      <workItem from="1668394222883" duration="19395000" />
     </task>
     <servers />
   </component>

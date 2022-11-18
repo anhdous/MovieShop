@@ -14,6 +14,8 @@ namespace ApplicationCore.Models
         [StringLength(50, ErrorMessage= "Email cannot exceed 50 characters")]
         public string Email { get; set; }
         [Required (ErrorMessage="Password should not be empty")]
+        //We don't need to use RegularExpression for the Password in Login Model,
+        // because user already create strong password in the Register
         public string Password { get; set; }
 
     }

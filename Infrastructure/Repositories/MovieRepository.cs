@@ -20,7 +20,7 @@ public class MovieRepository : IMovieRepository
         var movieDetails = await _movieShopDbContext.Movies
             .Include(m => m.GenresOfMovie).ThenInclude(m => m.Genre)
             .Include(m => m.CastsOfMovie).ThenInclude(m => m.Cast)
-            .Include(m=>m.Trailers)
+            .Include(m => m.Trailers)
             .FirstOrDefaultAsync(m => m.Id == id);
         return movieDetails;
     }
@@ -47,7 +47,7 @@ public class MovieRepository : IMovieRepository
 
     public async Task<List<Movie>> GetTop30GrossingMovies()
     {
-        //call the database with EF Core and get the data
+        // call the database with EF Core and get the data
         // Use MovieShopDbContext and Movie DbSet
         // select Top 30 * from Movies order by Revenue
         // write corresponding LINQ Query

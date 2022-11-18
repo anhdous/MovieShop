@@ -28,10 +28,11 @@ public class AccountController : Controller
             return View();
         }
         var userSuccess = await _accountService.ValidateUser(model);
-        if (userSuccess!= null)
+        if (userSuccess!= null && userSuccess.Id > 0)
         {
             // password matches
             // redirect to home page
+            // after successful authentication
             // create a cookie, cookies are always sent from browser automatically to server
             // Inside the cookie we store encrypted information (User claims) that Server can recognize and tell 
             // whether user is logged in or not
@@ -45,7 +46,6 @@ public class AccountController : Controller
                 new Claim(ClaimTypes.Surname, userSuccess.LastName),
                 new Claim(ClaimTypes.GivenName, userSuccess.FirstName),
                 new Claim("language", "english"),
-
             };
             // create cookie and cookie will have the above claims information
             // along with expiration time, don't store above information in the cookie as plain text, instead encrypt the above information
@@ -77,6 +77,7 @@ public class AccountController : Controller
     [HttpPost]
     public async Task<IActionResult> Register(UserRegisterModel model)
     {
+        // Check if the validation is succeeded 
         if (ModelState.IsValid)
         {
             //Model Binding

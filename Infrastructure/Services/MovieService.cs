@@ -11,15 +11,15 @@ public class MovieService : IMovieService
     private readonly IMovieRepository _movieRepository;
     private readonly IUserRepository _userRepository;
 
-    public MovieService(IMovieRepository movieRepository, IUserRepository userRepository)
+    public MovieService(IMovieRepository movieRepository )
     {
         _movieRepository = movieRepository;
-        _userRepository = userRepository;
+
     }
 
     public async Task<MovieDetailsModel> GetMovieDetails(int movieId)
     {
-        var movieDetails = await _movieRepository.GetById(movieId);
+        var movieDetails = await _movieRepository.GetById(movieId);// movieDetails is an entity, so we have to convert to a model
         if (movieDetails == null)
         {
             return null;
@@ -55,7 +55,8 @@ public class MovieService : IMovieService
         {
             movieDetailsModel.Casts.Add(new CastModel
             {
-                Id = cast.CastId, Name = cast.Cast.Name, Character = cast.Character,
+                Id = cast.CastId, Name = cast.Cast.Name, 
+                Character = cast.Character,
                 ProfilePath = cast.Cast.ProfilePath
                 
             });

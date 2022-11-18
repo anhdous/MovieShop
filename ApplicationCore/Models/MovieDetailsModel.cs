@@ -10,11 +10,10 @@ public class MovieDetailsModel
         Genres = new List<GenreModel>();
         Trailers = new List<TrailerModel>();
         Casts = new List<CastModel>();
+        Reviews = new List<ReviewRequestModel>();
     }
     public int Id { get; set; }
-
     public string Title { get; set; } = null!;
-
     public string Overview { get; set; } = null!;
     public string Tagline { get; set; } = null!;
     public decimal? Budget { get; set; }
@@ -23,11 +22,8 @@ public class MovieDetailsModel
     public string TmdbUrl { get; set; } = null!;
     public string PosterUrl { get; set; } = null!;
     public string BackdropUrl { get; set; } = null!;
-
     public string OriginalLanguage { get; set; } = null!;
-
     public DateTime? ReleaseDate { get; set; }
-
     public int? RunTime { get; set; }
     public decimal? Price { get; set; }
     public decimal? Rating { get; set; }

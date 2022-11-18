@@ -15,8 +15,8 @@ public class MoviesController : Controller
     public async Task<IActionResult> Details(int id)
     {
         // Go to MovieService => MovieRepository and get movie details from Movies Table
-        //Go to database and get the movie information by
-        //movie id and send the data(Model) to the view
+        // Go to database and get the movie information by
+        // movie id and send the data(Model) to the view
         // ADO.NET
         // Dapper Stack Overflow -> Micro ORM
         // Entity Framework Core -> Full ORM

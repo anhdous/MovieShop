@@ -30,12 +30,13 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddDbContext<MovieShopDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("MovieShopDbConnection")));
 
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
-{
-    options.Cookie.Name = "MovieShopAuthCookie";
-    options.ExpireTimeSpan = TimeSpan.FromHours(2);
-    options.LoginPath = "/Account/login";
-});
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options => 
+    {
+        options.Cookie.Name = "MovieShopAuthCookie";
+        options.ExpireTimeSpan = TimeSpan.FromHours(2);
+        options.LoginPath = "/Account/login";
+    });
 
 var app = builder.Build();
 
@@ -47,7 +48,10 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.UserMovieShopExceptionMiddleware();
 app.UseHttpsRedirection();
+// MVC need to return static file like CSS, Javascript, images.
+// API doesn't need to so API doesn't need this Middleware
 app.UseStaticFiles();
 
 app.UseRouting();

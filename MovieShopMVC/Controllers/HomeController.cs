@@ -15,7 +15,7 @@ public class HomeController : Controller
         _logger = logger;
         _movieService = movieService;
     }
-
+    [HttpGet]
     public async Task<IActionResult> Index()
     {
         //Go to database and get the data

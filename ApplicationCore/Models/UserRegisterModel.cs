@@ -10,14 +10,15 @@ namespace ApplicationCore.Models
 {
     public class UserRegisterModel
     { 
-        //Buit-in validator
+        //Built-in Validator
         [Required (ErrorMessage="Email should not be empty")]
         [EmailAddress(ErrorMessage="Email should be in right format")]
         [StringLength(50, ErrorMessage= "Email cannot exceed 50 characters")]
         public string Email { get; set; }
         
         [Required (ErrorMessage="Password should not be empty")]
-        [RegularExpression("^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[#$^%+=!()@&]).{8,}$", ErrorMessage = "Password should have minimum 8 character with at least one upper, lower, number and special character")]
+        [RegularExpression("^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[#$^%+=!()@&]).{8,}$", 
+            ErrorMessage = "Password should have minimum 8 character with at least one upper, lower, number and special character")]
         public string Password { get; set; }
         
         [Required (ErrorMessage="First Name should not be empty")]
@@ -32,6 +33,7 @@ namespace ApplicationCore.Models
         [Required (ErrorMessage="Date of Birth should not be empty")]
         // year should not be less than 1900
         // Minimum age should be 15
+        // Custom Validator because there is no built-in validator for these
         [MinimumYearAllowed]
         public DateTime DateOfBirth { get; set; }
     }

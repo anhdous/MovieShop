@@ -15,6 +15,10 @@
             <div class="form-group">
                 <label asp-for="Email" class="control-label"></label>
                 <input asp-for="Email" class="form-control" />
+                @* By including this tag helper here, we're saying if there is any  *@
+                @* validation error associated with the Name property, display those  *@
+                @* validation ErrorMessage at this location where we have the span  *@
+                @* element *@
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
             <div class="form-group">

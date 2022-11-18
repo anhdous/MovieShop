@@ -52,7 +52,7 @@ namespace MovieShopAPI.Controllers
                 // When client need some secure information or needs to perform any operation that requires users to be 
                 // authenticated then client need to send the token to the API in the Http Header
                 // Once the API receives the token from client it will validate the JWT token and if valid 
-                // it will send data back to the client
+                // it will send data back to the client 
                 //If JWT token is invalid or token is expired then API will send 401 Unauthorized
                 
             }
@@ -78,10 +78,10 @@ namespace MovieShopAPI.Controllers
             };
             var identityClaims = new ClaimsIdentity();
             identityClaims.AddClaims(claims);
-            // specify a secret key
+            // specify a secret key so that only API can understand
             var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["secretKey"]));
             
-            // Specify the algorithm
+            // Specify the hashing algorithm
             var credentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
             
             // Specify the expiration of the token
@@ -96,6 +96,8 @@ namespace MovieShopAPI.Controllers
                 Issuer = "MovieShop, Inc",
                 Audience = "MovieShop Clients"
             };
+            // JwtSecurityTokenHandler() is the class that will that tokenDetails that
+            // have information and create the token and return the token back to the caller 
             var tokenHandler = new JwtSecurityTokenHandler();
             var encodedJwt = tokenHandler.CreateToken(tokenDetails);
             return tokenHandler.WriteToken(encodedJwt);
